@@ -1,0 +1,29 @@
+[project]
+name = "photosorter"
+version = "0.1.0"
+description = "Sort photos from several sources into year folders; set aside duplicates, screenshots, receipts and duds; pick the best for a photo book."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "Pillow",
+    "pillow-heif",
+    "imagehash",
+    "opencv-python-headless",
+    "numpy",
+    "tqdm",
+    "google-auth-oauthlib",
+    "requests",
+]
+
+[project.scripts]
+photosorter = "photosorter.cli:main"
+
+[dependency-groups]
+dev = ["pytest"]
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
