@@ -2,6 +2,8 @@
 
 Sorts photos from several sources into year folders, sets aside duplicates, screenshots, receipts and duds, and can pick the best N photos for a photo book.
 
+> **Status: early and unproven.** The logic is covered by tests on synthetic photos and a mocked Google Picker API, but it has **not** yet been run against real Google OAuth/Picker sessions, real Google Takeout archives or HEIC files from a phone. The blur and receipt thresholds were tuned on synthetic images only. Always start with the default dry run and read `manifest.csv`. The tool only copies files and never changes your originals, but treat the results as a first draft and expect to tweak things. Bug reports and pull requests are welcome.
+
 **Originals are never modified, moved or deleted, and nothing in your Google account is changed.** Files are only *copied* into the output folder. The default is a dry run.
 
 ## Install
@@ -133,3 +135,7 @@ uv run pytest            # ~30 s; no network: the Picker API is mocked
 ```
 
 Tests cover date resolution, sidecar matching, duplicate grouping, burst selection, the photo book, the Picker flow (mocked) and an end-to-end run on the synthetic library.
+
+## License
+
+MIT, see `LICENSE`.

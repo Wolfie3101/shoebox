@@ -1,6 +1,6 @@
 # photosorter
 
-Wolfie's personal project (not Editor/client work): a Python CLI that sorts photos from local folders,
+Wolfie's personal open-source project: a Python CLI that sorts photos from local folders,
 Google Takeout and the Google Photos Picker into year folders. No Odoo, no client, no client prefix.
 
 ## Ours / never touched
@@ -11,7 +11,7 @@ Google Takeout and the Google Photos Picker into year folders. No Odoo, no clien
   `credentials.json` / `token.json` are git-ignored; the token is written with mode 0600.
 
 ## Git
-- Owner: Wolfie. Remote: github.com/Wolfie3101/shoebox (private). Repo-local identity: `Wolfie`, GitHub noreply address.
+- Owner: Wolfie. Remote: github.com/Wolfie3101/shoebox (public, MIT). Repo-local identity: `Wolfie`, GitHub noreply address.
 - Commit message: one line `[ADD|IMP|FIX|REM] photosorter: what`, trailers as separate `-m` lines
   (commit-gate splits the command on newlines). Stage files by name.
 - Default flow is an MR/PR from a branch once a remote exists; until then commits go on `master`.
@@ -35,4 +35,4 @@ Google Takeout and the Google Photos Picker into year folders. No Odoo, no clien
 ## Open list
 - Not tried against real Google OAuth/Picker, real Takeout archives, or phone HEIC files.
 - Blur/document thresholds are tuned on synthetic images only: tune on a real dry run.
-- Repo is private; make it public only on purpose.
+- Repo is public (MIT). Nothing private (real photos, tokens, personal paths or addresses) may be committed.
