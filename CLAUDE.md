@@ -12,9 +12,8 @@ Google Takeout and the Google Photos Picker into year folders. No Odoo, no clien
 
 ## Git
 - Owner: Wolfie. Remote: github.com/Wolfie3101/shoebox (public, MIT). Repo-local identity: `Wolfie`, GitHub noreply address.
-- Commit message: one line `[ADD|IMP|FIX|REM] photosorter: what`, trailers as separate `-m` lines
-  (commit-gate splits the command on newlines). Stage files by name.
-- Default flow is an MR/PR from a branch once a remote exists; until then commits go on `master`.
+- Commit message: first line `[ADD|IMP|FIX|REM] photosorter: what`. Stage files by name.
+- Default flow: a branch and a PR; small fixes by the owner may go straight to `master`.
 
 ## Work
 - Stack: Python 3.11+, uv. Allowed libs: Pillow, pillow-heif, imagehash, opencv-python-headless, numpy,
