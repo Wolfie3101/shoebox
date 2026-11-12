@@ -1,4 +1,4 @@
-# photosorter
+# Shoebox (`photosorter`)
 
 Sorts photos from several sources into year folders, sets aside duplicates, screenshots, receipts and duds, and can pick the best N photos for a photo book.
 
@@ -14,7 +14,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # Windows (PowerShell)
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 
-git clone <this repo> photosorter && cd photosorter
+git clone https://github.com/Wolfie3101/shoebox.git && cd shoebox
 uv sync
 uv run photosorter --help
 ```

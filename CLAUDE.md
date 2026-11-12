@@ -11,8 +11,7 @@ Google Takeout and the Google Photos Picker into year folders. No Odoo, no clien
   `credentials.json` / `token.json` are git-ignored; the token is written with mode 0600.
 
 ## Git
-- Owner: Wolfie. Repo-local identity is set (`Wolfie`, GitHub noreply address). No remote yet; when one is
-  created it should be under Wolfie3101 (`git-identities.json` already maps it).
+- Owner: Wolfie. Remote: github.com/Wolfie3101/shoebox (private). Repo-local identity: `Wolfie`, GitHub noreply address.
 - Commit message: one line `[ADD|IMP|FIX|REM] photosorter: what`, trailers as separate `-m` lines
   (commit-gate splits the command on newlines). Stage files by name.
 - Default flow is an MR/PR from a branch once a remote exists; until then commits go on `master`.
@@ -36,4 +35,4 @@ Google Takeout and the Google Photos Picker into year folders. No Odoo, no clien
 ## Open list
 - Not tried against real Google OAuth/Picker, real Takeout archives, or phone HEIC files.
 - Blur/document thresholds are tuned on synthetic images only: tune on a real dry run.
-- No remote repository yet.
+- Repo is private; make it public only on purpose.
